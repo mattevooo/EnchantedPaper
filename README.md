@@ -21,7 +21,7 @@ Build instructions:
 1. Patch paper with: `./gradlew applyPatches`
 2. Build the EnchantedPaper jars with: `./gradlew shadowjar createReobfPaperclipJar`
 3. Get the EnchantedPaper jar from `build/libs`
-4. Get the EnchantedPaper-Master jar from `MultiPaper-Master/build/libs`
+4. Get the EnchantedPaper-Master jar from `EnchantedPaper-Master/build/libs`
 
 ## Publishing to maven local
 Publish to your local maven repository with: `./gradlew publishToMavenLocal`

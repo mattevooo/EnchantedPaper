@@ -21,10 +21,10 @@ jobs:
       - name: Upload Paperclip jar
         uses: actions/upload-artifact@v2
         with:
-          name: multipaper.jar
-          path: build/libs/multipaper-paperclip-*-reobf.jar
-      - name: Upload MultiPaper-Master jar
+          name: enchantedpaper.jar
+          path: build/libs/enchantedpaper-paperclip-*-reobf.jar
+      - name: Upload EnchantedPaper-Master jar
         uses: actions/upload-artifact@v2
         with:
-          name: multipaper-master.jar
-          path: MultiPaper-Master/build/libs/multipaper-master*.jar
+          name: enchantedpaper-master.jar
+          path: EnchantedPaper-Master/build/libs/enchantedpaper-master*.jar

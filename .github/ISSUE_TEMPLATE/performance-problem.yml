@@ -35,7 +35,7 @@ body:
   - type: textarea
     attributes:
       label: Server config files
-      description: We need bukkit.yml, spigot.yml, paper-global.yml, paper-world-defaults.yml, multipaper.yml and server.properties. If you use per-world Paper configs, make sure to include them. You can paste it below or use a paste site like https://paste.gg.
+      description: We need bukkit.yml, spigot.yml, paper-global.yml, paper-world-defaults.yml, enchantedpaper.yml and server.properties. If you use per-world Paper configs, make sure to include them. You can paste it below or use a paste site like https://paste.gg.
       value: |
         ```
         Paste configs or paste.gg link here!
@@ -46,7 +46,7 @@ body:
 
   - type: textarea
     attributes:
-      label: MultiPaper version
+      label: EnchantedPaper version
       description: |
         Run `/version` on your server and **paste** the full, unmodified output here.
         "latest" is *not* a version; we require the output of `/version` so we can adequately track down the issue.
@@ -79,6 +79,6 @@ body:
       value: |
         Before submitting this issue, please ensure the following:
 
-        1. You are running the latest version of MultiPaper from [our downloads page](https://multipaper.io/download.html).
+        1. You are running the latest version of EnchantedPaper from [our downloads page](https://enchantedpaper.io/download.html).
         2. You searched for and ensured there isn't already an open issue regarding this.
-        3. Your version of Minecraft is supported by MultiPaper.
+        3. Your version of Minecraft is supported by EnchantedPaper.

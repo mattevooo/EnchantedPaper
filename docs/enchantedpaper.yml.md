@@ -1,4 +1,4 @@
-# multipaper.yml
+# enchantedpaper.yml
 
 ## master-connection
 
@@ -6,14 +6,14 @@
 The name of this server on your bungeecord or velocity proxy. If you aren't
 using a proxy, just set this to some arbitrary unique name for each server.
 This can also be set using
-`java -Dmultipaper.master-connection.my-name=server1 -jar multipaper.jar`.
+`java -Denchantedpaper.master-connection.my-name=server1 -jar enchantedpaper.jar`.
 
 `master-address`  
 The address for the Master server in the form `127.0.0.1:35353`. Note that all
-servers must have the same value for multipaperMasterAddress. You can not have
+servers must have the same value for enchantedpaperMasterAddress. You can not have
 one server use '127.0.0.1' and another use '192.168.0.5'. They must both be set
 to '192.168.0.5'. This can also be set using
-`java -Dmultipaper.master-connection.master-address=127.0.0.1:35353 -jar multipaper.jar`.
+`java -Denchantedpaper.master-connection.master-address=127.0.0.1:35353 -jar enchantedpaper.jar`.
 
 `advertise-to-built-in-proxy`  
 Whether to let players join this server using the Master's built-in proxy.
@@ -22,7 +22,7 @@ Whether to let players join this server using the Master's built-in proxy.
 
 `disable-safety-redstone-chunk-lock`  
 When executing a redstone contraption that is run across multiple servers,
-MultiPaper syncs these servers together such that the redstone contraption can
+EnchantedPaper syncs these servers together such that the redstone contraption can
 run without getting out of sync. Disabling this can prevent lag spikes caused
 by this system, but can also mess up cross-server redstone.
 
@@ -116,7 +116,7 @@ Files or directories that should not be synced even if they're included in
 `files-to-sync-on-startup` or `files-to-sync-in-real-time`.
 
 `files-to-only-upload-on-server-stop`  
-Only upload these files to the MultiPaper-Master when the server stops instead
+Only upload these files to the EnchantedPaper-Master when the server stops instead
 of whenever the file is written to.
 
 `files-to-sync-in-real-time`  
@@ -126,7 +126,7 @@ without delay. Warning: SQLite and H2 database files cannot be synced with
 this method.
 
 `files-to-sync-on-startup`  
-Files or directories that should be synced onto the MultiPaper-Master.
+Files or directories that should be synced onto the EnchantedPaper-Master.
 Directories will be synced recursively. If two servers write to the same file
 at the same time, the last server to write wins. These files will be downloaded
 at startup. Note that file deletion is not synced. Files will have to be

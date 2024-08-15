@@ -46,10 +46,10 @@ out/
 # other stuff
 run/
 
-MultiPaper-Server
-MultiPaper-API
+EnchantedPaper-Server
+EnchantedPaper-API
 
 *.sh
-multipaper.jar
+enchantedpaper.jar
 
 !gradle/wrapper/gradle-wrapper.jar

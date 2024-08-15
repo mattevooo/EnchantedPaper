@@ -7,9 +7,9 @@ pluginManagement {
     }
 }
 
-rootProject.name = "multipaper"
+rootProject.name = "enchantedpaper"
 
-for (name in listOf("MultiPaper-MasterMessagingProtocol", "MultiPaper-API", "MultiPaper-Server", "MultiPaper-Master")) {
+for (name in listOf("EnchantedPaper-MasterMessagingProtocol", "EnchantedPaper-API", "EnchantedPaper-Server", "EnchantedPaper-Master")) {
     val projName = name.toLowerCase(Locale.ENGLISH)
     include(projName)
     findProject(":$projName")!!.projectDir = file(name)

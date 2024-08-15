@@ -57,7 +57,7 @@ subprojects {
 }
 
 paperweight {
-    serverProject.set(project(":multipaper-server"))
+    serverProject.set(project(":enchantedpaper-server"))
 
     remapRepo.set("https://repo.papermc.io/repository/maven-public/")
     decompileRepo.set("https://repo.papermc.io/repository/maven-public/")
@@ -69,11 +69,11 @@ paperweight {
         withStandardPatcher {
             apiSourceDirPath.set("Purpur-API") 
             apiPatchDir.set(layout.projectDirectory.dir("patches/api"))
-            apiOutputDir.set(layout.projectDirectory.dir("MultiPaper-API"))
+            apiOutputDir.set(layout.projectDirectory.dir("EnchantedPaper-API"))
 
             serverSourceDirPath.set("Purpur-Server")
             serverPatchDir.set(layout.projectDirectory.dir("patches/server"))
-            serverOutputDir.set(layout.projectDirectory.dir("MultiPaper-Server"))
+            serverOutputDir.set(layout.projectDirectory.dir("EnchantedPaper-Server"))
         }
     }
 
@@ -110,7 +110,7 @@ paperweight {
 }
 
 tasks.generateDevelopmentBundle {
-    apiCoordinates.set("puregero.multipaper:MultiPaper-API")
+    apiCoordinates.set("es.ubyt.enchantedpaper:EnchantedPaper-API")
     mojangApiCoordinates.set("io.papermc.paper:paper-mojangapi")
     libraryRepositories.set(
         listOf(
