@@ -10,7 +10,7 @@ pluginManagement {
 rootProject.name = "enchantedpaper"
 
 for (name in listOf("EnchantedPaper-MasterMessagingProtocol", "EnchantedPaper-API", "EnchantedPaper-Server", "EnchantedPaper-Master")) {
-    val projName = name.toLowerCase(Locale.ENGLISH)
+    val projName = name.lowercase(Locale.ENGLISH)
     include(projName)
     findProject(":$projName")!!.projectDir = file(name)
 }
